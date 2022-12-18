@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>沿江街道</title>
-  </head>
-  <body>
-    <div id="app">hello world</div>
 
-  </body>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+
+        .base {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: content-box;
+        }
+
+        .base-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80px;
+            width: 33.3%;
+            margin: 10px 0px;
+            overflow: hidden;
+        }
+
+        .base-item-title {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 80%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #558ede;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .base-item-detail {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 80%;
+            background-color: #3e689c;
+            color: white;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: content-box;
+        }
+
+        .header-item {
+            display: flex;
+            height: 30px;
+            line-height: 30px;
+            width: 33.3%;
+            margin: 10px 0px;
+            /* background-color: #eee; */
+            justify-content: center;
+        }
+
+        .header-item-content {
+            display: flex;
+            width: 80%;
+            height: 30px;
+            /* font-weight: bold; */
+            /* font-size: 24px; */
+            /* background-color: red; */
+        }
+
+        .header-item-content-left {
+            width: 5px;
+            background-color: #558ede;
+            border-radius: 2px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-right: 5px;
+        }
+
+        .header-item-content-right {}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="header-item">
+                <div class="header-item-content">
+                    <div class="header-item-content-left"></div>
+                    <div class="header-item-content-right">基础信息</div>
+                </div>
+            </div>
+        </div>
+        <div class="base">
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483661&idx=1&sn=677cd41cb1a37bfb75e7801308fd4adc&chksm=c2d3cdeef5a444f86c44d137e3d4aa9cc7ddc702b7682a574122f8423fc6318e8cdf16d729ea#rd">
+                <div class="base-item-title">身份证</div>
+                <div class="base-item-detail">&nbsp;身份证办理</div>
+            </a>
+            <!-- <div class="base-item">
+          <div class="base-item-title">居住证</div>
+          <div class="base-item-detail">&nbsp;居住证办理</div>
+        </div> -->
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483668&idx=1&sn=b9c47cf1700361fd40e03d723f153977&chksm=c2d3cdf7f5a444e1b481aa8ac65714e8b15c1f48f72e24904f683ada59a7759865ce3860126e#rd">
+                <div class="base-item-title">房产证</div>
+                <div class="base-item-detail">&nbsp;房产证办理</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483670&idx=1&sn=740e0d0a328e13a08759f7a8a521304b&chksm=c2d3cdf5f5a444e332e82841b051e36dd3fd521ab7329537a013deccba9e025d6e1c9f2d5dca#rd">
+                <div class="base-item-title">落户</div>
+                <div class="base-item-detail">&nbsp;户口迁移</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483675&idx=1&sn=e551ea6a67bf9637f3e55e29f9e68575&chksm=c2d3cdf8f5a444eec7bb3fbf66031ba75b089e6082de36939dc5f63d180f47abce1b2b16b66e#rd">
+                <div class="base-item-title">结婚</div>
+                <div class="base-item-detail">&nbsp;结婚证办理</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483681&idx=1&sn=8c29ccd5a8f042b5cfbdd595b072e76a&chksm=c2d3cdc2f5a444d4feaf788d38299abaf597a5958064909fae6285616d49e914fe0e4d05fee5#rd">
+                <div class="base-item-title">怀孕</div>
+                <div class="base-item-detail">&nbsp;建小卡，建大卡</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483684&idx=1&sn=76b7622c15ba0d8df0c31db2af812f49&chksm=c2d3cdc7f5a444d1c04045f08b7f0457f6219874651e12f4457dc037ea55d704cea160805244#rd">
+                <div class="base-item-title">新生儿</div>
+                <div class="base-item-detail">&nbsp;新生儿</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483692&idx=1&sn=583ceb86ae80248110de94678228abe7&chksm=c2d3cdcff5a444d939298aa1d19e57303c4223a2aa632d5af460a28e2493896932bec88af694#rd">
+                <div class="base-item-title">疫苗</div>
+                <div class="base-item-detail">&nbsp;儿童疫苗接种、体检</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483716&idx=1&sn=121860e6b729f7b125e91d02f148994c&chksm=c2d3cda7f5a444b1b653a8ac34bd786bb44bfe6066028331f12cc6280fbf90c853d9b34d0895#rd">
+                <div class="base-item-title">幼儿园</div>
+                <div class="base-item-detail">&nbsp;幼儿园划分</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483714&idx=1&sn=84f6072bb6abf1ef7c329f162e3a6f03&chksm=c2d3cda1f5a444b71e875bb108169ac1686f3ab43b58c33bd41cbd2f67c83688878cb114f78d#rd">
+                <div class="base-item-title">小学</div>
+                <div class="base-item-detail">&nbsp;小学划分</div>
+            </a>
+            <a class="base-item"
+                href="https://mp.weixin.qq.com/s?__biz=Mzk0MTQzMjIwNA==&mid=2247483725&idx=1&sn=a0bf5f722df7289f9be0d26c26312cd8&chksm=c2d3cdaef5a444b8f04c7338b05076fdbec3410b1e79df8d72ab1c3a5fda72af777e323d966a#rd">
+                <div class="base-item-title">初中</div>
+                <div class="base-item-detail">&nbsp;初中划分</div>
+            </a>
+        </div>
+        <!-- <div class="base">
+        <div class="base-item">
+          <div class="base-item-title">身份证</div>
+          <div class="base-item-detail">&nbsp;身份证办理</div>
+        </div>
+      </div> -->
+    </div>
+
+</body>
+
 </html>
